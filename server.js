@@ -3,6 +3,7 @@ require("dotenv").config();
 const express = require("express");
 const db = require("./db");
 const cors = require("cors");
+app.use(cors({ origin: "https://your-frontend-url.com" }));
 
 const multer = require("multer");
 const path = require("path");
